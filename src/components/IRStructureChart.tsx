@@ -27,11 +27,10 @@ const IRStructureChart = ({ onSelect, activeId }: Props) => {
         <div className="mx-auto h-8 w-px bg-border" />
 
         {/* Horizontal bus */}
-        <div className="relative h-px bg-border">
-          <div className="absolute inset-x-0 -top-px h-px bg-border" />
-        </div>
+        <div className="mx-[12.5%] h-px bg-border" />
 
-        <div className="grid grid-cols-4 gap-x-5 gap-y-10 pt-0">
+        <div className="grid grid-cols-4 items-start gap-x-5 gap-y-10">
+
           {IR_SECTIONS.map((section) => {
             const isActive = activeId === section.id;
             const count = countDocuments(section);
