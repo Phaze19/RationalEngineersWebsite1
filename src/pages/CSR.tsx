@@ -335,7 +335,9 @@ const CSR = () => {
                 {/* Images */}
                 <div
                   className={
-                    item.images.length > 1 ? "grid items-start gap-4 sm:grid-cols-2" : ""
+                    item.images.length > 1
+                      ? "grid content-start items-start gap-4 self-start sm:grid-cols-2"
+                      : "self-start"
                   }
                 >
                   {item.images.map((img, idx) => (
