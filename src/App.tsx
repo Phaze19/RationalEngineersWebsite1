@@ -18,7 +18,7 @@ const CSR = lazy(() => import("./pages/CSR"));
 const Careers = lazy(() => import("./pages/Careers"));
 const Contact = lazy(() => import("./pages/Contact"));
 const Certifications = lazy(() => import("./pages/Certifications"));
-const QuoteStatus = lazy(() => import("./pages/QuoteStatus"));
+
 
 const NotFound = lazy(() => import("./pages/NotFound"));
 
@@ -31,7 +31,6 @@ const prefetchRoutes = () => {
   void import("./pages/About");
   void import("./pages/Work");
   void import("./pages/Contact");
-  void import("./pages/QuoteStatus");
   void import("./pages/Leadership");
   void import("./pages/CSR");
 };
@@ -100,11 +99,6 @@ const ROUTE_META: Record<string, { title: string; description: string }> = {
     description:
       "Get in touch with Rational Engineers Limited for copper CTC wires, busbars, and conductor products. Request a quote today.",
   },
-  "/quote-status": {
-    title: "Track Your Quote — Rational Engineers Limited",
-    description:
-      "Track the status of your Rational Engineers quote request using your reference code and email address.",
-  },
 };
 
 const DEFAULT_META = {
@@ -139,9 +133,6 @@ const App = () => (
           <Route path="/certifications" element={<Certifications />} />
           <Route path="/careers" element={<Careers />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/quote-status" element={<QuoteStatus />} />
-          
-          
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
