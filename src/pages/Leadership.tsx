@@ -9,7 +9,7 @@ import ajit from "@/assets/director-ajit-venugopalan.jpg";
 import gandhi from "@/assets/director-nilesh-gandhi.jpg";
 import vedakAsset from "@/assets/director-nilesh-vedak.jpg.asset.json";
 import kajolAsset from "@/assets/director-kajol-jain.jpg.asset.json";
-import bipin from "@/assets/director-bipin-joshi.jpg";
+import bipinAsset from "@/assets/director-bipin-joshi.jpg.asset.json";
 import { assetUrl } from "@/lib/assetUrl";
 
 type Leader = {
