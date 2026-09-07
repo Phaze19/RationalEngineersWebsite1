@@ -136,9 +136,7 @@ const initiatives: Initiative[] = [
       { value: "300+", label: "Students supported" },
       { value: "1,000", label: "Sq. ft. school building" },
     ],
-    images: [
-      { src: assetUrl(villageSchoolAsset), alt: "Students entering the upgraded village school building", caption: "Z. P. Primary School, Hamrapur" },
-    ],
+    images: [],
   },
   {
     icon: HeartPulse,
@@ -154,9 +152,7 @@ const initiatives: Initiative[] = [
       "Long-term community care infrastructure",
     ],
     stats: [{ value: "100", label: "Residents capacity" }],
-    images: [
-      { src: assetUrl(secondInningsAsset), alt: "Second Innings Home for senior citizens at Khardi", caption: "Second Innings Home, Khardi" },
-    ],
+    images: [],
   },
   {
     icon: Sprout,
@@ -171,10 +167,7 @@ const initiatives: Initiative[] = [
       "Community participation and rural wellness",
     ],
     stats: [{ value: "~60", label: "Cows under care" }],
-    images: [
-      { src: assetUrl(goshalaAsset), alt: "Pashupati Goshala cow shelter", caption: "Pashupati Goshala" },
-      { src: assetUrl(ruralFarmingAsset), alt: "Natural farming and organic input preparation with local farmers", caption: "Natural farming & rural livelihood" },
-    ],
+    images: [],
   },
   {
     icon: Eye,
