@@ -1,5 +1,6 @@
 import { Mail, MapPin, Phone, Linkedin, ArrowRight, Copy, Check } from "lucide-react";
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { useToast } from "@/hooks/use-toast";
 import { CONTACTS, CONTACT_PHONE, CONTACT_PHONE_HREF, type ContactEntry } from "@/data/contacts";
@@ -98,6 +99,15 @@ const EnquiryCTA = () => {
                       <Mail className="h-3.5 w-3.5 shrink-0" />
                       <span className="truncate">{contact.email}</span>
                     </a>
+                    {contact.pageHref && (
+                      <Link
+                        to={contact.pageHref}
+                        className="mt-2 flex items-center gap-1.5 text-[11px] font-semibold uppercase tracking-[0.15em] text-rational-red underline underline-offset-4 hover:text-background"
+                      >
+                        {contact.pageLabel ?? "Learn more"}
+                        <ArrowRight className="h-3 w-3" />
+                      </Link>
+                    )}
                   </div>
                   <div className="flex shrink-0 items-center gap-2">
                     <Button

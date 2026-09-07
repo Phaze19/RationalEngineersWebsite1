@@ -2,12 +2,21 @@ export type ContactEntry = {
   name: string;
   role: string;
   email: string;
+  /** Optional internal page linked from the card (e.g. the Careers page). */
+  pageHref?: string;
+  pageLabel?: string;
 };
 
 /** Single source of truth for the direct contact cards shown across the site. */
 export const CONTACTS: ContactEntry[] = [
   { name: "Sales Enquiry", role: "Sales & Quotations", email: "enquiry@rationalengineers.com" },
-  { name: "Career", role: "JOB OPPORTUNITY", email: "hr@rationalengineers.com" },
+  {
+    name: "Career",
+    role: "JOB OPPORTUNITY",
+    email: "hr@rationalengineers.com",
+    pageHref: "/careers",
+    pageLabel: "View openings & apply",
+  },
   { name: "Information Desk", role: "Product Information", email: "info@rationalengineers.com" },
 ];
 

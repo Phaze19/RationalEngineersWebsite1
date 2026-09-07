@@ -15,6 +15,7 @@ const Work = lazy(() => import("./pages/Work"));
 const About = lazy(() => import("./pages/About"));
 const Leadership = lazy(() => import("./pages/Leadership"));
 const CSR = lazy(() => import("./pages/CSR"));
+const Careers = lazy(() => import("./pages/Careers"));
 const Contact = lazy(() => import("./pages/Contact"));
 const Certifications = lazy(() => import("./pages/Certifications"));
 const QuoteStatus = lazy(() => import("./pages/QuoteStatus"));
@@ -88,6 +89,11 @@ const ROUTE_META: Record<string, { title: string; description: string }> = {
     description:
       "Quality certifications of Rational Engineers Limited, including ISO 9001:2015 quality management systems for copper conductor manufacturing.",
   },
+  "/careers": {
+    title: "Careers — Rational Engineers Limited",
+    description:
+      "Current job openings at Rational Engineers Limited in Thane: production, quality, sales and maintenance roles in copper conductor manufacturing. Apply to hr@rationalengineers.com.",
+  },
   "/contact": {
     title: "Contact Us — Rational Engineers Limited",
     description:
@@ -130,6 +136,7 @@ const App = () => (
           <Route path="/leadership" element={<Leadership />} />
           <Route path="/csr" element={<CSR />} />
           <Route path="/certifications" element={<Certifications />} />
+          <Route path="/careers" element={<Careers />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/quote-status" element={<QuoteStatus />} />
           
