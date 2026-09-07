@@ -315,7 +315,11 @@ const CSR = () => {
                   </ul>
 
                   {item.stats && (
-                    <div className="mt-8 grid gap-px overflow-hidden border border-border bg-border sm:grid-cols-2">
+                    <div
+                      className={`mt-8 grid gap-px overflow-hidden border border-border bg-border ${
+                        item.stats.length > 1 ? "sm:grid-cols-2" : ""
+                      }`}
+                    >
                       {item.stats.map((s) => (
                         <div key={s.label} className="bg-background px-5 py-5">
                           <p className="text-2xl font-light text-foreground">{s.value}</p>
@@ -329,11 +333,15 @@ const CSR = () => {
                 </div>
 
                 {/* Images */}
-                <div className={item.images.length > 1 ? "grid gap-4 sm:grid-cols-2" : ""}>
+                <div
+                  className={
+                    item.images.length > 1 ? "grid items-start gap-4 sm:grid-cols-2" : ""
+                  }
+                >
                   {item.images.map((img, idx) => (
                     <figure
                       key={img.src}
-                      className={`overflow-hidden border border-border bg-muted ${
+                      className={`flex h-full flex-col overflow-hidden border border-border bg-muted ${
                         item.images.length === 3 && idx === 2 ? "sm:col-span-2" : ""
                       }`}
                     >
@@ -344,13 +352,14 @@ const CSR = () => {
                         className="aspect-[4/3] w-full object-cover transition-transform duration-700 hover:scale-[1.03]"
                       />
                       {img.caption && (
-                        <figcaption className="border-t border-border px-4 py-3 text-[11px] uppercase tracking-[0.18em] text-muted-foreground">
+                        <figcaption className="mt-auto border-t border-border px-4 py-3 text-[11px] uppercase tracking-[0.18em] text-muted-foreground">
                           {img.caption}
                         </figcaption>
                       )}
                     </figure>
                   ))}
                 </div>
+
               </motion.article>
             ))}
           </div>
