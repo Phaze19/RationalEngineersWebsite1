@@ -19,7 +19,7 @@ const Careers = lazy(() => import("./pages/Careers"));
 const Contact = lazy(() => import("./pages/Contact"));
 const Certifications = lazy(() => import("./pages/Certifications"));
 const QuoteStatus = lazy(() => import("./pages/QuoteStatus"));
-const InvestorRelations = lazy(() => import("./pages/InvestorRelations"));
+
 const NotFound = lazy(() => import("./pages/NotFound"));
 
 const queryClient = new QueryClient();
@@ -100,11 +100,6 @@ const ROUTE_META: Record<string, { title: string; description: string }> = {
     description:
       "Get in touch with Rational Engineers Limited for copper CTC wires, busbars, and conductor products. Request a quote today.",
   },
-  "/investor-relations": {
-    title: "Investor Relations — Rational Engineers Limited",
-    description:
-      "Financial results, annual reports, governance disclosures, shareholder information and compliance filings of Rational Engineers Limited.",
-  },
   "/quote-status": {
     title: "Track Your Quote — Rational Engineers Limited",
     description:
@@ -145,7 +140,7 @@ const App = () => (
           <Route path="/careers" element={<Careers />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/quote-status" element={<QuoteStatus />} />
-          <Route path="/investor-relations" element={<InvestorRelations />} />
+          
           
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
