@@ -143,7 +143,7 @@ const leaders: Leader[] = [
     name: "Bipin Joshi",
     role: "INDEPENDANT DIRECTOR - ADVOCATE, BOMBAY HIGH COURT",
     org: "Legal Counsel · B.A., LL.B.",
-    image: bipin,
+    image: assetUrl(bipinAsset),
     bio: [
       "With over four decades of distinguished legal practice since 1980, Mr. Bipin Joshi brings extensive experience in civil and commercial litigation, corporate matters, debt recovery, consumer disputes and proceedings before the High Court and various judicial and quasi-judicial forums. His longstanding practice is marked by substantial courtroom experience, sound legal acumen and a comprehensive understanding of complex civil-law matters.",
     ],
