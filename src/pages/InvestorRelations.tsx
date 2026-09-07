@@ -3,6 +3,7 @@ import { ChevronDown, FileText, Download, Mail, Phone } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import PageTopSpacer from "@/components/PageTopSpacer";
 import Footer from "@/components/Footer";
+import IRStructureChart from "@/components/IRStructureChart";
 import {
   IR_CONTACT,
   IR_SECTIONS,
