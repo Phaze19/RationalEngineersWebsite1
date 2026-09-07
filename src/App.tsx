@@ -100,11 +100,6 @@ const ROUTE_META: Record<string, { title: string; description: string }> = {
     description:
       "Get in touch with Rational Engineers Limited for copper CTC wires, busbars, and conductor products. Request a quote today.",
   },
-  "/investor-relations": {
-    title: "Investor Relations — Rational Engineers Limited",
-    description:
-      "Financial results, annual reports, governance disclosures, shareholder information and compliance filings of Rational Engineers Limited.",
-  },
   "/quote-status": {
     title: "Track Your Quote — Rational Engineers Limited",
     description:
