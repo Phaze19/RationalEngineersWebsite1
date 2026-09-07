@@ -3,6 +3,7 @@ import { ChevronDown, FileText, Download, Mail, Phone } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import PageTopSpacer from "@/components/PageTopSpacer";
 import Footer from "@/components/Footer";
+import IRStructureChart from "@/components/IRStructureChart";
 import {
   IR_CONTACT,
   IR_SECTIONS,
@@ -84,6 +85,29 @@ const InvestorRelations = () => {
                 published
               </span>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="border-b border-border py-14 md:py-16">
+        <div className="container mx-auto px-6">
+          <p className="text-[11px] font-bold uppercase tracking-[0.28em] text-rational-red">
+            Disclosure Structure
+          </p>
+          <div className="mt-3 h-0.5 w-12 bg-rational-red" />
+          <p className="mt-5 max-w-2xl text-sm leading-relaxed text-muted-foreground">
+            Select any heading below to open its filings.
+          </p>
+          <div className="mt-10">
+            <IRStructureChart
+              activeId={openSection}
+              onSelect={(id) => {
+                setOpenSection(id);
+                document
+                  .getElementById(id)
+                  ?.scrollIntoView({ behavior: "smooth", block: "start" });
+              }}
+            />
           </div>
         </div>
       </section>
