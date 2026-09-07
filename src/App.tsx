@@ -19,7 +19,7 @@ const Careers = lazy(() => import("./pages/Careers"));
 const Contact = lazy(() => import("./pages/Contact"));
 const Certifications = lazy(() => import("./pages/Certifications"));
 const QuoteStatus = lazy(() => import("./pages/QuoteStatus"));
-const InvestorRelations = lazy(() => import("./pages/InvestorRelations"));
+
 const NotFound = lazy(() => import("./pages/NotFound"));
 
 const queryClient = new QueryClient();
@@ -145,7 +145,7 @@ const App = () => (
           <Route path="/careers" element={<Careers />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/quote-status" element={<QuoteStatus />} />
-          <Route path="/investor-relations" element={<InvestorRelations />} />
+          
           
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
