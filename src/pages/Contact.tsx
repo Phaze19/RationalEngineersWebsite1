@@ -134,6 +134,15 @@ const Contact = () => {
                           <Mail className="h-3.5 w-3.5 shrink-0" />
                           <span className="truncate">{contact.email}</span>
                         </a>
+                        {contact.pageHref && (
+                          <Link
+                            to={contact.pageHref}
+                            className="mt-2 flex items-center gap-1.5 text-[11px] font-semibold uppercase tracking-[0.15em] text-rational-red underline underline-offset-4"
+                          >
+                            {contact.pageLabel ?? "Learn more"}
+                            <ArrowRight className="h-3 w-3" />
+                          </Link>
+                        )}
                       </div>
                       <div className="flex shrink-0 items-center gap-2">
                         <Button
