@@ -178,11 +178,7 @@ const Contact = () => {
                 </div>
 
                 <p className="mt-6 text-sm text-muted-foreground text-center">
-                  We'll respond within 24-48 business hours. Already submitted?{" "}
-                  <Link to="/quote-status" className="underline">
-                    Track your quote
-                  </Link>
-                  .
+                  We'll respond within 24-48 business hours.
                 </p>
               </div>
             </div>
