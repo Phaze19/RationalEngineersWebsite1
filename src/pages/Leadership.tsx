@@ -9,7 +9,7 @@ import ajit from "@/assets/director-ajit-venugopalan.jpg";
 import gandhi from "@/assets/director-nilesh-gandhi.jpg";
 import vedakAsset from "@/assets/director-nilesh-vedak.jpg.asset.json";
 import kajolAsset from "@/assets/director-kajol-jain.jpg.asset.json";
-import bipin from "@/assets/director-bipin-joshi.jpg";
+import bipinAsset from "@/assets/director-bipin-joshi.jpg.asset.json";
 import { assetUrl } from "@/lib/assetUrl";
 
 type Leader = {
@@ -143,7 +143,7 @@ const leaders: Leader[] = [
     name: "Bipin Joshi",
     role: "INDEPENDANT DIRECTOR - ADVOCATE, BOMBAY HIGH COURT",
     org: "Legal Counsel · B.A., LL.B.",
-    image: bipin,
+    image: assetUrl(bipinAsset),
     bio: [
       "With over four decades of distinguished legal practice since 1980, Mr. Bipin Joshi brings extensive experience in civil and commercial litigation, corporate matters, debt recovery, consumer disputes and proceedings before the High Court and various judicial and quasi-judicial forums. His longstanding practice is marked by substantial courtroom experience, sound legal acumen and a comprehensive understanding of complex civil-law matters.",
     ],
