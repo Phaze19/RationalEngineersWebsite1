@@ -43,7 +43,7 @@ const Index = () => {
             "@context": "https://schema.org",
             "@type": "WebSite",
             name: "Rational Engineers Limited",
-            url: "https://rationalengineers.lovable.app/",
+            url: "https://rationalengineers.com/",
             about: "Manufacturer of copper CTC conductors, enamelled winding wires and busbars",
           })}
         </script>
