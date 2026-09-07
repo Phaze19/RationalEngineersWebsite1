@@ -13,6 +13,7 @@ const columns: { title: string; links: { label: string; href: string }[] }[] = [
       
       { label: "Leadership", href: "/leadership" },
       { label: "CSR Activities", href: "/csr" },
+      { label: "Investor Relations", href: "/investor-relations" },
     ],
   },
   {

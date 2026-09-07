@@ -31,6 +31,7 @@ const navLinks: NavLink[] = [
   },
   { href: "/certifications", label: "CERTIFICATIONS" },
   { href: "/contact", label: "CONTACT" },
+  { href: "/investor-relations", label: "INVESTOR RELATIONS" },
 ];
 
 const desktopLinkClass =
