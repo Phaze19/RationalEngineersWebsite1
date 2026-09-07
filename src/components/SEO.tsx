@@ -1,6 +1,6 @@
 import { Helmet } from "react-helmet-async";
 
-const BASE_URL = "https://www.rationalengineers.com";
+const BASE_URL = "https://rationalengineers.lovable.app";
 
 export interface SEOProps {
   title: string;
