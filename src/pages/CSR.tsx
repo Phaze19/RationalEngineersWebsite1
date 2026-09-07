@@ -12,10 +12,6 @@ import schoolConstructionAsset from "@/assets/csr/school-construction.jpg.asset.
 import schoolAerialAsset from "@/assets/csr/school-aerial.jpg.asset.json";
 import mahavirAsset from "@/assets/csr/mahavir-hospital.jpg.asset.json";
 import cancerAsset from "@/assets/csr/cancer-hospital.jpg.asset.json";
-import villageSchoolAsset from "@/assets/csr/village-school.jpg.asset.json";
-import secondInningsAsset from "@/assets/csr/second-innings.jpg.asset.json";
-import goshalaAsset from "@/assets/csr/goshala.jpg.asset.json";
-import ruralFarmingAsset from "@/assets/csr/rural-farming.jpg.asset.json";
 import sarathiAsset from "@/assets/csr/sarathi-braille.jpg.asset.json";
 
 type Initiative = {
@@ -270,10 +266,12 @@ const CSR = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-80px" }}
                 transition={{ duration: 0.6 }}
-                className="grid gap-10 border-t border-border pt-10 lg:grid-cols-[1fr_1.15fr] lg:gap-14"
+                className={`grid gap-10 border-t border-border pt-10 ${
+                  item.images.length ? "lg:grid-cols-[1fr_1.15fr] lg:gap-14" : ""
+                }`}
               >
                 {/* Text */}
-                <div className={i % 2 === 1 ? "lg:order-2" : ""}>
+                <div className={i % 2 === 1 && item.images.length ? "lg:order-2" : ""}>
                   <div className="mb-5 flex flex-wrap items-center gap-3">
                     <span className="flex h-10 w-10 items-center justify-center rounded-full bg-rational-red/10">
                       <item.icon className="h-5 w-5 text-rational-red" />
