@@ -59,18 +59,41 @@ const Hero = () => {
       onBlurCapture={() => setIsPaused(false)}
     >
       <AnimatePresence initial={false} mode="sync">
-        <motion.img
-          key={slide.image}
-          src={slide.image}
-          alt={slide.alt}
-          className="absolute inset-0 h-full w-full object-cover"
-          loading={activeSlide === 0 ? "eager" : "lazy"}
-          decoding="async"
-          initial={{ opacity: 0, scale: reduceMotion ? 1 : 1.04 }}
-          animate={{ opacity: 1, scale: reduceMotion ? 1 : 1.08 }}
-          exit={{ opacity: 0 }}
-          transition={{ opacity: { duration: 0.8 }, scale: { duration: 7.5, ease: "linear" } }}
-        />
+        {slide.video && !reduceMotion ? (
+          <motion.div
+            key={slide.video}
+            className="absolute inset-0"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ opacity: { duration: 0.8 } }}
+          >
+            <video
+              className="pointer-events-none h-full w-full object-cover"
+              src={slide.video}
+              poster={slide.image}
+              autoPlay
+              muted
+              loop
+              playsInline
+              preload={activeSlide === 0 ? "none" : "auto"}
+              aria-label={slide.alt}
+            />
+          </motion.div>
+        ) : (
+          <motion.img
+            key={slide.image}
+            src={slide.image}
+            alt={slide.alt}
+            className="absolute inset-0 h-full w-full object-cover"
+            loading={activeSlide === 0 ? "eager" : "lazy"}
+            decoding="async"
+            initial={{ opacity: 0, scale: reduceMotion ? 1 : 1.04 }}
+            animate={{ opacity: 1, scale: reduceMotion ? 1 : 1.08 }}
+            exit={{ opacity: 0 }}
+            transition={{ opacity: { duration: 0.8 }, scale: { duration: 7.5, ease: "linear" } }}
+          />
+        )}
       </AnimatePresence>
 
       
