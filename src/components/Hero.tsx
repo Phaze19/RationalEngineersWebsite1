@@ -59,7 +59,6 @@ const Hero = () => {
           alt={slide.alt}
           className="absolute inset-0 h-full w-full object-cover"
           loading={activeSlide === 0 ? "eager" : "lazy"}
-          fetchPriority={activeSlide === 0 ? "high" : "auto"}
           decoding="async"
           initial={{ opacity: 0, scale: reduceMotion ? 1 : 1.04 }}
           animate={{ opacity: 1, scale: reduceMotion ? 1 : 1.08 }}
@@ -146,11 +145,12 @@ const Hero = () => {
             <ArrowLeft />
           </Button>
           {slides.map((item, index) => (
-            <button
+            <Button
               key={item.title}
               type="button"
+              variant="ghost"
               onClick={() => setActiveSlide(index)}
-              className={`h-1 transition-all duration-300 ${index === activeSlide ? "w-12 bg-rational-red" : "w-6 bg-background/40"}`}
+              className={`h-1 min-w-0 rounded-none p-0 transition-all duration-300 hover:bg-rational-red ${index === activeSlide ? "w-12 bg-rational-red" : "w-6 bg-background/40"}`}
               aria-label={`Show slide ${index + 1}: ${item.title}`}
               aria-current={index === activeSlide}
             />
