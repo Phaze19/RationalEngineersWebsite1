@@ -58,6 +58,14 @@ const RouteTracker = () => {
   return null;
 };
 
+const ScrollReset = () => {
+  const { pathname } = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+  return null;
+};
+
 const ROUTE_META: Record<string, { title: string; description: string }> = {
   "/": {
     title: "Rational Engineers — Premium Copper CTC Wires & Conductors",
@@ -120,6 +128,7 @@ const App = () => (
       <Sonner />
       <BrowserRouter>
         <RouteTracker />
+        <ScrollReset />
         <RouteSEO />
         <RoutePrefetcher />
         <Suspense fallback={<div className="min-h-dvh bg-background" />}>

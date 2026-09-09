@@ -4,6 +4,8 @@ import Footer from "@/components/Footer";
 import { motion } from "framer-motion";
 import { Shield, FileCheck, Download, ExternalLink, FlaskConical } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import brochureAsset from "@/assets/Rational_Engineers_Limited_REL_Catalogue.pdf.asset.json";
+import { assetUrl } from "@/lib/assetUrl";
 
 const certifications = [
   {
@@ -158,7 +160,7 @@ const Certifications = () => {
                   </a>
                 </Button>
                 <Button asChild variant="outline" size="lg" className="gap-2">
-                  <a href="/rational-engineers-brochure.pdf" download="Rational-Engineers-Brochure.pdf">
+                  <a href={assetUrl(brochureAsset)} target="_blank" rel="noopener noreferrer" download="Rational-Engineers-Brochure.pdf">
                     <Download className="w-4 h-4" />
                     Download Brochure
                   </a>
