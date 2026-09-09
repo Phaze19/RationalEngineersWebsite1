@@ -17,7 +17,7 @@ const slides = [
   },
   {
     image: copperFlowImage,
-    alt: "Copper rods flowing through precision machinery into finished conductors",
+    alt: "Copper rod and stranded conductor coil on the Rational Engineers production line",
     eyebrow: "Precision in Every Conductor",
     title: "From Copper Rod to Performance",
     description:
