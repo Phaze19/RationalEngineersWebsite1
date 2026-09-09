@@ -101,6 +101,7 @@ const Hero = () => {
               >
                 {slide.title}
               </motion.span>
+            </AnimatePresence>
           </h1>
 
           <AnimatePresence mode="wait">
