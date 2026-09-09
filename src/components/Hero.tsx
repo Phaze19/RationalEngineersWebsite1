@@ -17,7 +17,7 @@ const slides = [
   },
   {
     image: copperFlowImage,
-    alt: "Copper rods flowing through precision machinery into finished conductors",
+    alt: "Copper rod and stranded conductor coil on the Rational Engineers production line",
     eyebrow: "Precision in Every Conductor",
     title: "From Copper Rod to Performance",
     description:
@@ -67,7 +67,7 @@ const Hero = () => {
         />
       </AnimatePresence>
 
-      {activeSlide === 1 && <div className="copper-flow-overlay pointer-events-none absolute inset-0" aria-hidden="true" />}
+      
 
       {/* Overlays */}
       <div className="absolute inset-0 bg-gradient-to-r from-foreground/95 via-foreground/70 to-foreground/20" />
