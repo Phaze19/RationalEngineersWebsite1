@@ -5,10 +5,15 @@ import QuoteDialog from "@/components/QuoteDialog";
 import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/hero-copper-wires.jpg";
 import copperFlowImage from "@/assets/hero-copper-flow.jpg";
+import copperFlowVideoAsset from "@/assets/hero-copper-flow.mp4.asset.json";
+import { assetUrl } from "@/lib/assetUrl";
+
+const copperFlowVideo = assetUrl(copperFlowVideoAsset);
 
 const slides = [
   {
     image: heroImage,
+    video: null as string | null,
     alt: "Copper wire rod coils on the Rational Engineers manufacturing floor",
     eyebrow: "Product Engineering Partner · Established 1989",
     title: "Empowering Transformation",
@@ -17,7 +22,8 @@ const slides = [
   },
   {
     image: copperFlowImage,
-    alt: "Copper rod and stranded conductor coil on the Rational Engineers production line",
+    video: copperFlowVideo,
+    alt: "Copper rods flowing through drawing machinery into finished conductors on the Rational Engineers production line",
     eyebrow: "Precision in Every Conductor",
     title: "From Copper Rod to Performance",
     description:
