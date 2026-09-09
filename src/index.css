@@ -178,6 +178,27 @@
       @apply opacity-100 translate-y-0;
     }
   }
+
+  .copper-flow-overlay {
+    opacity: 0.2;
+    background-image: repeating-linear-gradient(
+      108deg,
+      transparent 0,
+      transparent 9%,
+      hsl(var(--rational-red) / 0.65) 9.2%,
+      transparent 9.7%,
+      transparent 18%
+    );
+    background-size: 220% 100%;
+    mix-blend-mode: screen;
+    animation: copper-flow 3.2s linear infinite;
+    mask-image: linear-gradient(to left, black, transparent 72%);
+  }
+
+  @keyframes copper-flow {
+    from { background-position: 100% 0; }
+    to { background-position: 0 0; }
+  }
 }
 
 /* ---------- Accessibility: reduced motion ---------- */
