@@ -128,6 +128,7 @@ const App = () => (
       <Sonner />
       <BrowserRouter>
         <RouteTracker />
+        <ScrollReset />
         <RouteSEO />
         <RoutePrefetcher />
         <Suspense fallback={<div className="min-h-dvh bg-background" />}>
