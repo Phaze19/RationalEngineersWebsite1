@@ -24,7 +24,7 @@ const certifications = [
     subtitle: "Environmental Management System",
     description: "Demonstrates our commitment to minimising environmental impact across all manufacturing processes and waste management.",
     scope: "Environmental management across all production facilities and supply chain operations",
-    status: "IN PROGRESS",
+    status: "CERTIFIED",
   },
 ];
 
