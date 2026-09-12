@@ -39,7 +39,7 @@ const certifications = [
     icon: FlaskConical,
     title: "ISO 14001:2015",
     scope: "Environmental Compliance",
-    status: "IN PROGRESS",
+    status: "CERTIFIED",
   },
 ];
 

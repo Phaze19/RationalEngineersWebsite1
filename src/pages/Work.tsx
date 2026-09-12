@@ -16,9 +16,9 @@ const Work = () => {
     {
       icon: FlaskConical,
       title: "ISO 14001:2015",
-      description: "Environmental Management System in progress, demonstrating our commitment to sustainable manufacturing.",
+      description: "Environmental Management System certified, demonstrating our commitment to sustainable manufacturing.",
       scope: "Environmental Compliance",
-      status: "IN PROGRESS"
+      status: "CERTIFIED"
     }
   ];
 
