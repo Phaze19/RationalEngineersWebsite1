@@ -22,8 +22,8 @@ const slides = [
   },
   {
     image: copperFlowImage,
-    video: copperFlowVideo,
-    alt: "Copper rods flowing through drawing machinery into finished conductors on the Rational Engineers production line",
+    video: copperDrawWindVideo,
+    alt: "Copper rods being progressively drawn slimmer through dies and wound as finished wire on the Rational Engineers production line",
     eyebrow: "Precision in Every Conductor",
     title: "From Copper Rod to Performance",
     description:
