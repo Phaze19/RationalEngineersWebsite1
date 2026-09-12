@@ -5,10 +5,10 @@ import QuoteDialog from "@/components/QuoteDialog";
 import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/hero-copper-wires.jpg";
 import copperFlowImage from "@/assets/hero-copper-flow.jpg";
-import copperFlowVideoAsset from "@/assets/hero-copper-flow.mp4.asset.json";
+import copperDrawWindVideoAsset from "@/assets/hero-copper-draw-wind.mp4.asset.json";
 import { assetUrl } from "@/lib/assetUrl";
 
-const copperFlowVideo = assetUrl(copperFlowVideoAsset);
+const copperDrawWindVideo = assetUrl(copperDrawWindVideoAsset);
 
 const slides = [
   {
@@ -22,8 +22,8 @@ const slides = [
   },
   {
     image: copperFlowImage,
-    video: copperFlowVideo,
-    alt: "Copper rods flowing through drawing machinery into finished conductors on the Rational Engineers production line",
+    video: copperDrawWindVideo,
+    alt: "Copper rods being progressively drawn slimmer through dies and wound as finished wire on the Rational Engineers production line",
     eyebrow: "Precision in Every Conductor",
     title: "From Copper Rod to Performance",
     description:
