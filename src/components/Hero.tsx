@@ -76,7 +76,7 @@ const Hero = () => {
               muted
               loop
               playsInline
-              preload={activeSlide === 0 ? "none" : "auto"}
+              preload="auto"
               aria-label={slide.alt}
             />
           </motion.div>
