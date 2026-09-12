@@ -78,7 +78,7 @@ const applications = [
   {
     icon: Gauge,
     image: appCtPt,
-    title: "DISTRIBUTION TRANSFORMERS (CT / PT)",
+    title: "DISTRIBUTION TRANSFORMERS &\u00a0 CT / PT",
     application: "Current & potential instrument transformers for metering, protection & control",
     products: [
       "Enamelled Copper Conductor\u00a0",
