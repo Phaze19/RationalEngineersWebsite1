@@ -12,15 +12,6 @@ const copperFlowVideo = assetUrl(copperFlowVideoAsset);
 
 const slides = [
   {
-    image: heroImage,
-    video: null as string | null,
-    alt: "Copper wire rod coils on the Rational Engineers manufacturing floor",
-    eyebrow: "Product Engineering Partner · Established 1989",
-    title: "Empowering Transformation",
-    description:
-      "Your product engineering partner for high performance copper CTC conductors, enamelled winding wires, busbars and paper covered strips. Engineered in India for transformer, motor and infrastructure OEMs across four continents.",
-  },
-  {
     image: copperFlowImage,
     video: copperFlowVideo,
     alt: "Copper rods and conductor coils flowing through the Rational Engineers production line",
@@ -28,6 +19,15 @@ const slides = [
     title: "From Copper Rod to Performance",
     description:
       "Precision-drawn copper flows through controlled manufacturing processes to become reliable conductors engineered for demanding electrical applications.",
+  },
+  {
+    image: heroImage,
+    video: null as string | null,
+    alt: "Copper wire rod coils on the Rational Engineers manufacturing floor",
+    eyebrow: "Product Engineering Partner · Established 1989",
+    title: "Empowering Transformation",
+    description:
+      "Your product engineering partner for high performance copper CTC conductors, enamelled winding wires, busbars and paper covered strips. Engineered in India for transformer, motor and infrastructure OEMs across four continents.",
   },
 ];
 
@@ -76,7 +76,7 @@ const Hero = () => {
               muted
               loop
               playsInline
-              preload={activeSlide === 0 ? "none" : "auto"}
+              preload="auto"
               aria-label={slide.alt}
             />
           </motion.div>
