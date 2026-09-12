@@ -5,7 +5,7 @@ import QuoteDialog from "@/components/QuoteDialog";
 import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/hero-copper-wires.jpg";
 import copperFlowImage from "@/assets/hero-copper-flow.jpg";
-import copperFlowVideoAsset from "@/assets/hero-copper-real-drawing-winding.mp4.asset.json";
+import copperFlowVideoAsset from "@/assets/hero-copper-winding-only.mp4.asset.json";
 import { assetUrl } from "@/lib/assetUrl";
 
 const copperFlowVideo = assetUrl(copperFlowVideoAsset);
@@ -14,7 +14,7 @@ const slides = [
   {
     image: copperFlowImage,
     video: copperFlowVideo,
-    alt: "Copper rod being progressively drawn into fine wire and wound onto an industrial spool",
+    alt: "Copper wire being wound in even layers onto an industrial rotating spool",
     eyebrow: "Precision in Every Conductor",
     title: "From Copper Rod to Performance",
     description:
